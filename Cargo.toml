@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = ["telechecker_lib", "telechecker_cli", "telechecker_gui"]
+
+[workspace.package]
+version = "0.1.2"
+authors = ["orph3uslyre"]
+description = "An OSINT tool that checks if phone numbers are connected to a telegram account."
+edition = "2021"
+readme = "./README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["telegram", "osint", "open-source-research", "cli"]
+# TODO:
+# categories = []
+# TODO:
+repository = "https://github.com/orph3usLyre/"
+
+[workspace.dependencies]
+anyhow = "1.0.81"
+dotenvy = "0.15.7"
+tracing = "0.1.40"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.115"
+phonenumber = "0.3.3"
